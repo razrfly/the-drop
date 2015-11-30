@@ -1,0 +1,7 @@
+mondo = Shopify.create(name: 'mondo', url: 'mondotees.com', currency: 'USD', subdomain: 'mondo-30')
+bottleneck = Shopify.create(name: 'bottleneck', url: 'bottleneckgallery.com', currency: 'USD', subdomain: 'bottleneck-gallery')
+postersandtoys = Shopify.create(name: 'postersandtoys', url: 'postersandtoys.com', currency: 'USD', subdomain: 'postersandtoys')
+user = User.create(first_name: 'Holden', last_name: 'Thomas', email: 'holden.thomas@gmail.com', password: 'jojojo1234')
+account = user.accounts.create(site: mondo, username: 'holden.thomas@gmail.com', password: 'sawyer')
+account2 = user.accounts.create(site: bottleneck, username: 'holden.thomas@gmail.com', password: 'gQkgQJNO')
+account3 = user.accounts.create(site: postersandtoys, username: 'holden.thomas@gmail.com', password: 'sawyer')
